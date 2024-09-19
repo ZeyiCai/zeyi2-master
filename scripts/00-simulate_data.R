@@ -38,3 +38,4 @@ data <-
 
 #### Write_csv
 write_csv(data, file = "raw_data.csv")
+

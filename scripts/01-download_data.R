@@ -1,8 +1,8 @@
 #### Preamble ####
 # Purpose: Downloads and saves the data from Open Data Toronto
-# Author: Rohan Alexander
+# Author: Zeyi Cai
 # Date: 19 September 2024
-# Contact: rohan.alexander@utoronto.ca
+# Contact: zcloris.cai@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: None
 # Any other information needed? None
@@ -29,4 +29,5 @@ data <- filter(datastore_resources, row_number()==1) %>%
 
 
 #### Save data ####
-write_csv(data, "data/raw_data/raw_data.csv") 
+write_csv(data, "raw_data.csv") 
+
