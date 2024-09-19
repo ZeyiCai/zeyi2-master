@@ -1,8 +1,8 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Marriage Licence Statistics"
+subtitle: None
 author: 
-  - Rohan Alexander
+  - Zeyi Cai
 thanks: "Code and data are available at: LINK."
 date: today
 date-format: long
@@ -26,7 +26,7 @@ data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
 
 # Introduction
 
-You can and should cross-reference sections and sub-sections. We use @talia, @opendatatorotno, and @rohan.
+You can and should cross-reference sections and sub-sections. We use @talia, @opendatatorotno, and @zeyi.
 
 The remainder of this paper is structured as follows. @sec-mydatasection
 
@@ -40,9 +40,8 @@ Some of our data is of penguins (@fig-marriage), from @palmerpenguins.
 #| label: fig-marriage
 #| fig-cap: Bills of penguins
 #| echo: false
-
 data |> 
-  ggplot(aes(x = date, y = marriage_licenses)) +
+  ggplot(aes(x = date, y = number_of_marriage)) +
   geom_point()
 
 ```
